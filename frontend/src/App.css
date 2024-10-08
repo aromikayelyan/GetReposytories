@@ -1,0 +1,49 @@
+.App {
+	display: flex;
+
+	height: 100vh;
+}
+.trending-repos {
+	border: 2px solid white;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 20px;
+}
+.trending-repos h1 {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	margin-bottom: 20px;
+}
+.repo-list {
+	color: white;
+	padding: 20px;
+}
+a {
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	margin: 10px;
+}
+a:hover {
+	text-decoration: underline;
+}
+.search input {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	width: 300px;
+}
+.search input:focus {
+	outline: none;
+}
+.btn {
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	width: 100px;
+	margin: 10px auto;
+}
