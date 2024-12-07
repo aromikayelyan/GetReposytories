@@ -22,10 +22,11 @@
    ```
 
 3. **Настройте окружение / Set up the environment:**  
-   - Добавьте токен Octokit в `backend/routes/getrep.js`.  
-     Add your Octokit token in `backend/routes/getrep.js`.  
-   - Настройте параметры MySQL в `backend/utils/database.js`.  
-     Configure MySQL settings in `backend/utils/database.js`.
+   - Создайте ".env" файл и добавьте недостающие данные
+   - GITHUB_TOKEN = "Your GitHub token"
+   - MYSQL_NAME = "Your Mysql db name"
+   - MYSQL_USER = "Your Mysql db user"
+   - MYSQL_PASSWORD = "Your Mysql db password"
 
 ---
 
