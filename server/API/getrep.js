@@ -1,8 +1,10 @@
 import { Octokit } from "octokit"
 
 
+const auth = process.env.GITHUB_TOKEN
+
 const octokit = new Octokit({
-  auth: '', // запишите в пустых кавычках свой 'Octokit token' выданный github-ом
+  auth
 })
 
 export async function getTrendingRepositories() {
@@ -86,8 +88,8 @@ export async function getRepoByOwner(value = 'octocat') {
 export async function getRepoByName(value = 'octocat') {
   try {
     const response = await octokit.request('GET /search/repositories', {
-      q: value, // Имя репозитория, которое вы ищете
-      per_page: 5, // Ограничить количество возвращаемых результатов
+      q: value,
+      per_page: 5, 
     })
     const data = []
     response.data.items.forEach(repo => {

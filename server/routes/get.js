@@ -1,7 +1,6 @@
 import { Router } from 'express'
 import Repo from '../models/sqlmodel.js'
-import { getTrendingRepositories, getAllRepositories, getRepoByOwner, getRepoByName } from './getrep.js'
-import { where } from 'sequelize'
+import { getTrendingRepositories, getAllRepositories, getRepoByOwner, getRepoByName } from '../API/getrep.js'
 
 const router = Router()
 
@@ -76,14 +75,6 @@ router.post('/getbyname', async (req, res) => {
 })
 
 
-router.get('/getalldb', async (req, res) => {
-  res.status(200).json(await Repo.findAll())
-})
-
-
-router.get('/getbyid', async (req, res) => {
-  res.status(200).json(await Repo.findByPk('73'))
-})
 
 
 export default router

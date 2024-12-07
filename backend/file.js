@@ -1,1 +1,0 @@
-console.log('im start rewrite this code :)')

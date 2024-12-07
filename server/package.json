@@ -12,6 +12,7 @@
   "dependencies": {
     "@octokit/app": "^15.1.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.0",
     "fs": "^0.0.1-security",
     "mysql2": "^3.11.3",
